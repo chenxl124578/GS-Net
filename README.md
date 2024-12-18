@@ -1,7 +1,9 @@
 # GS-Net: Point Cloud Sampling with Graph Neural Networks
 
-<!-- ![something wrong](images/GS-Net-firstfig.png "GS-Net comparision") -->
-<img src="images/GS-Net-firstfig.png" alt="GS-Net comparision" width="300">
+
+<div align="center">
+  <img src="images/GS-Net-firstfig.png" alt="GS-Net comparision" width="500">
+</div>
 
 ![something wrong](images/gsnet_framework.png "GS-Net framework")
 
