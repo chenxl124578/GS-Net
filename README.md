@@ -1,7 +1,7 @@
 # GS-Net: Point Cloud Sampling with Graph Neural Networks
 
 ![something wrong](images/GS-Net-network-PR.png "GS-Net framework")
-<!-- ![image](https://github.com/ZhiliangMa/MPU6500-HMC5983-AK8975-BMP280-MS5611-10DOF-IMU-PCB/blob/main/img/IMU-V5-TOP.jpg) -->
+
 
 ## Environment
 Environment:Python3.6.9, PyTorch1.7.1, gcc 6 or 7 or higher!(gcc 4 will get ninja bug, this is important)
@@ -90,7 +90,16 @@ data<br>
 ├── scanobjectnn/h5_files/main_split            # ScanObjectNN<br>
 └── semantickitti_cls       # SemanticKITTI-cls<br>
 
-![something wrong](images/semantickitticls.png "SemanticKITTI-cls visualization")
+## semanticKITTI-cls construction
+SemanticKITTI-cls, which is a custom-built dataset based on the LiDAR dataset SemanticKITTI, containing point cloud objects from outdoor driving scenes. SemanticKITTI-cls consists of 4,000 samples across 6 categories. As objects move farther from the sensor, these point clouds exhibit sparsity and diverse density characteristics.<br>
+![something wrong](images/semanticKITTI-cls.png "SemanticKITTI-cls visualization") <br>
+
+Here is the SemanticKITTI-cls's distribution. <br>
+| Split  | Car  | Motorcycle | Truck | Other-vehicle | Person | Bicyclist | Total |
+| ------ | ---- | ---------- | ----- | ------------- | ------ | --------- | ----- |
+| Train  | 1000 | 200        |  600  |    1000       |  80    |    100    |  2980 |
+| Test   | 300  | 87         |  254  |    300        |  34    |    45     |  1020 |
+| Total  | 1300 | 287        |  854  |    1300       |  114   |    145    |  4000 |
 
 
 ## Usage
