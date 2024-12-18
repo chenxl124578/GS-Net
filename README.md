@@ -1,6 +1,6 @@
 # GS-Net: Point Cloud Sampling with Graph Neural Networks
 
-
+![something wrong](images/GS-Net-network-PR.png "GS-Net framework")
 
 
 ## Environment
@@ -90,7 +90,7 @@ data<br>
 ├── scanobjectnn/h5_files/main_split            # ScanObjectNN<br>
 └── semantickitti_cls       # SemanticKITTI-cls<br>
 
-![something wrong](images/semanticKITTI-cls.pdf "SemanticKITTI-cls visualization")
+![something wrong](images/semantickitticls.png "SemanticKITTI-cls visualization")
 
 
 ## Usage
