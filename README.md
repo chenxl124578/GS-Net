@@ -90,6 +90,8 @@ data<br>
 ├── scanobjectnn/h5_files/main_split            # ScanObjectNN<br>
 └── semantickitti_cls       # SemanticKITTI-cls<br>
 
+![something wrong](images/semanticKITTI-cls.pdf "SemanticKITTI-cls visualization")
+
 
 ## Usage
 
