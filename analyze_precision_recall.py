@@ -11,9 +11,9 @@ import h5py
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dump_dir', default='log_eval/diffpool/2022-07-23_11-50/retrieval', help='dump folder path [default: dump]')
+parser.add_argument('--dump_dir', default='log_eval/gsnet_pyg/log_dir/retrieval', help='dump folder path [default: dump]')
 parser.add_argument('--num_out_points', type=int, default=32, help='Number of output points [2, 4, ..., 1024] [default: 32]')
-parser.add_argument('--model_name', type=str, default="SAGEPooling", help='model name')
+parser.add_argument('--model_name', type=str, default="GSNet", help='model name')
 
 FLAGS = parser.parse_args()
 DUMP_DIR = FLAGS.dump_dir

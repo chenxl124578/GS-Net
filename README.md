@@ -1,7 +1,7 @@
 # GS-Net: Point Cloud Sampling with Graph Neural Networks
 
-![something wrong](images/GS-Net-network-PR.png "GS-Net framework")
-
+![something wrong](images/GS-Net-firstfig.png "GS-Net comparision")
+![something wrong](images/gsnet_framework.png "GS-Net framework")
 
 ## Environment
 Environment:Python3.6.9, PyTorch1.7.1, gcc 6 or 7 or higher!(gcc 4 will get ninja bug, this is important)
@@ -154,12 +154,21 @@ evaluate pointnet classifier on SemanticKITTI-cls use:
 python eval_classifier.py --dataset semantickitti_cls --classifier_model_path weights/PointNet_classifier_model_semantickitti_cls.pth  --num_category 6 --not_debug 
 ```
 
-### GS-Net Evaluating:
+### Sampling network Evaluating:
+
 Evaluating GS-Net base on PointNet classifier and ModelNet40 with r=32, you can use:
 ```
 python eval_gsnet.py --dataset modelnet40 --not_debug --match --assign_ratio 0.03125 --points_noise 0.1 --sampler_model_path log/gsnet_pyg/log_dir/checkpoints/best_model.pth
 ```
 
+#### Retrieval Evaluating:
+You need to add --save_retrieval_vectors for retrieval evaluating:
+```
+python eval_gsnet.py --dataset modelnet40 --not_debug --match --assign_ratio 0.03125 --points_noise 0.1 --sampler_model_path log/gsnet_pyg/log_dir/checkpoints/best_model.pth --save_retrieval_vectors
+
+python analyze_precision_recall.py --dump_dir log_eval/gsnet_pyg/log_dir_32/retrieval/ --num_out_points 32 --model_name GSNet
+```
+
 
 ## Thanks
-Thanks for [Samplenet(TF)](https://github.com/itailang/SampleNet), [Pointnet_Pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch),[PointNet_Pytorch(for environment install)](https://github.com/erikwijmans/Pointnet2_PyTorch).
+Thanks for [Samplenet](https://github.com/itailang/SampleNet), [Pointnet_Pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch),[PointNet_Pytorch(for environment install)](https://github.com/erikwijmans/Pointnet2_PyTorch).
