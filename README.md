@@ -1,7 +1,7 @@
 # GS-Net: Point Cloud Sampling with Graph Neural Networks
 
 ![something wrong](images/GS-Net-network-PR.png "GS-Net framework")
-
+<!-- ![image](https://github.com/ZhiliangMa/MPU6500-HMC5983-AK8975-BMP280-MS5611-10DOF-IMU-PCB/blob/main/img/IMU-V5-TOP.jpg) -->
 
 ## Environment
 Environment:Python3.6.9, PyTorch1.7.1, gcc 6 or 7 or higher!(gcc 4 will get ninja bug, this is important)
