@@ -81,14 +81,14 @@ pip install torch-geometric
 ```
 
 ## dataset prepare
-ModelNet40: https://modelnet.cs.princeton.edu/
-ScanObjectNN: https://hkust-vgd.github.io/scanobjectnn/
-SemanticKITTI-cls: https://drive.google.com/file/d/1mf0GIVmd0BU_lakTBGpMcdT1jrCxdUyM/view?usp=sharing
-
-data
-├── modelnet40_ply_hdf5_2048               # ModelNet40
-├── scanobjectnn/h5_files/main_split            # ScanObjectNN
-└── semantickitti_cls       # SemanticKITTI-cls
+ModelNet40: https://modelnet.cs.princeton.edu/ <br>
+ScanObjectNN: https://hkust-vgd.github.io/scanobjectnn/ <br>
+SemanticKITTI-cls: https://drive.google.com/file/d/1mf0GIVmd0BU_lakTBGpMcdT1jrCxdUyM/view?usp=sharing <br>
+<br>
+data<br>
+├── modelnet40_ply_hdf5_2048               # ModelNet40<br>
+├── scanobjectnn/h5_files/main_split            # ScanObjectNN<br>
+└── semantickitti_cls       # SemanticKITTI-cls<br>
 
 
 ## Usage
