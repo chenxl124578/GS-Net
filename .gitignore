@@ -1,0 +1,14 @@
+/log
+/log_eval
+/log*
+*__pycache__
+data/
+Pointnet2_PyTorch
+/weights
+outputs.npy
+outputs.txt
+points.npy
+*.pdf
+*.zip
+*.png
+*.pth
