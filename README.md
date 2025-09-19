@@ -173,6 +173,18 @@ python eval_gsnet.py --dataset modelnet40 --not_debug --match --assign_ratio 0.0
 python analyze_precision_recall.py --dump_dir log_eval/gsnet_pyg/log_dir_32/retrieval/ --num_out_points 32 --model_name GSNet
 ```
 
+## Citation
+If you find GS-Net useful for your research and applications, please cite using this BibTeX:
+```
+@article{chen2025gs,
+  title={GS-Net: Point cloud sampling with graph neural networks},
+  author={Chen, Xiaolei and Chen, Jie and Qiu, Shoumeng and Xue, Xiangyang and Pu, Jian},
+  journal={Pattern Recognition},
+  pages={112054},
+  year={2025},
+  publisher={Elsevier}
+}
+```
 
 ## Thanks
 Thanks for [Samplenet](https://github.com/itailang/SampleNet), [Pointnet_Pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch),[PointNet_Pytorch(for environment install)](https://github.com/erikwijmans/Pointnet2_PyTorch).
